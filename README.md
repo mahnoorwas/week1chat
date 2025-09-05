@@ -1,13 +1,29 @@
-⚠️ OHS Hazard Assessment AI Advisor
-This is a Streamlit web application that acts as an AI-powered Occupational Health & Safety (OHS) advisor. It uses Google's Gemini API to assess workplace hazards based on user input and provides detailed recommendations in a structured format.
 
-✨ Features
-Hazard Assessment: Analyzes a given workplace environment to identify potential hazards.
+## ✨ Features
 
-Risk Level Analysis: Assigns a risk level (Low, Medium, High) to each identified hazard.
+- 📝 **Hazard Assessment Tool**  
+  - Analyze workplace environments and identify potential hazards.  
+  - Classify hazards by category and assign a **risk level** (Low, Medium, High).  
+  - Generate **actionable safety recommendations** in structured JSON format.  
 
-Safety Recommendations: Provides actionable safety measures and recommendations for each hazard.
+- 💬 **OHS Chat Assistant**  
+  - Ask any **workplace safety-related question**.  
+  - Guardrails prevent unrelated topics (e.g., sports, celebrities).  
+  - Provides clear, AI-powered occupational safety advice.  
 
-Interactive Interface: A user-friendly form to input workplace details and a chat assistant for follow-up questions.
+- 🏠 **Dashboard View**  
+  - Professional landing page with quick access to:  
+    - 📊 Reports  
+    - 🧑‍🏫 Training  
+    - 🚨 Alerts  
 
-Structured Output: Presents the AI-generated report in a clean, organized, and professional format
+- 🎨 **Interactive Interface**  
+  - Built with **Streamlit + custom CSS** for a modern, professional design.  
+  - Chat bubbles for user/assistant messages.  
+  - Highlighted hazard boxes for clarity in analysis results.  
+
+
+
+
+## 📂 Project Structure
+
