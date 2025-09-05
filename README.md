@@ -1,4 +1,10 @@
+# 🦺 OHS Hazard Assessment & Safety Agent
 
+This is a **Streamlit web application** that acts as an **AI-powered Occupational Health & Safety (OHS) advisor**.  
+It leverages **Google’s Gemini API** to assess workplace hazards, provide structured safety recommendations, and offer a conversational **OHS Chat Assistant** for ongoing workplace guidance.  
+The application also includes a **professional dashboard interface** for quick access to safety insights.
+
+---
 ## ✨ Features
 
 - 📝 **Hazard Assessment Tool**  
