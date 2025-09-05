@@ -4,9 +4,7 @@ import os
 import json
 from dotenv import load_dotenv
 
-# -------------------------
-# Load Environment Variables
-# -------------------------
+
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
@@ -15,19 +13,11 @@ if not api_key:
 else:
     genai.configure(api_key=api_key)
 
-# -------------------------
-# Initialize Model
-# -------------------------
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-# -------------------------
-# Streamlit Page Config
-# -------------------------
 st.set_page_config(page_title="OHS Hazard Assessment", page_icon="⚠️", layout="wide")
 
-# -------------------------
-# App Title
-# -------------------------
+
 st.title("⚠️ Occupational Health & Safety AI Advisor")
 st.markdown("""
 This AI-powered tool helps identify **workplace hazards** and provides recommendations
@@ -44,9 +34,6 @@ with st.form("hazard_form"):
     hazards_description = st.text_area("⚠️ Describe Hazards or Environment", placeholder="e.g., Noise, Dust, Slippery floors")
     submitted = st.form_submit_button("🔍 Analyze Hazards")
 
-# -------------------------
-# Handle Form Submission
-# -------------------------
 if submitted:
     if not api_key:
         st.error("🚨 API key not found.")
@@ -104,9 +91,6 @@ if submitted:
         except Exception as e:
             st.error(f"❌ An unexpected error occurred: {e}")
 
-# -------------------------
-# Chat Interface for Follow-ups
-# -------------------------
 st.markdown("---")
 st.header("💬 OHS AI Chat Assistant")
 
